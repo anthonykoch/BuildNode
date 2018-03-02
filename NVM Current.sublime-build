@@ -1,0 +1,7 @@
+{
+  "selector": "source.js",
+  "line_regex": "Line ([0-9]+):",
+  "osx": {
+    "shell_cmd": "nvm run --silent \"${file}\"",
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "selector": "source.js",
+  "line_regex": "Line ([0-9]+):",
+  "shell_cmd": "cd \"${file_path}\"; node \"${packages}/BuildNode/node_modules/@babel/node/bin/babel-node.js\" --presets \"${packages}/BuildNode/node_modules/@babel/preset-env\" \"${file}\"",
+}

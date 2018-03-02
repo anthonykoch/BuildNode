@@ -1,0 +1,5 @@
+{
+  "selector": "source.js",
+  "line_regex": "Line ([0-9]+):",
+  "shell_cmd": "node -r @std/esm \"${file}\"",
+}

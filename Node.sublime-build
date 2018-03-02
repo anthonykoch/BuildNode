@@ -1,0 +1,6 @@
+{
+  "selector": "source.js",
+  "line_regex": "Line ([0-9]+):",
+  "shell_cmd": "node \"${file}\"",
+  // "cmd": ["node", "${file}"]
+}
