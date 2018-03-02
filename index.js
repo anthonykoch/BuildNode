@@ -6,5 +6,5 @@ const what = async () => {};
 
 console.log(process.cwd())
 
-console.log(what )
+console.log({...what} )
 
