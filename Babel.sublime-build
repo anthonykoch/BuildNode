@@ -1,5 +1,6 @@
 {
   "selector": "source.js",
   "line_regex": "Line ([0-9]+):",
-  "shell_cmd": "cd \"${file_path}\"; node \"${packages}/BuildNode/node_modules/@babel/node/bin/babel-node.js\" --presets \"${packages}/BuildNode/node_modules/@babel/preset-env\" \"${file}\"",
+  "working_dir": "${packages}/BuildNode",
+  "shell_cmd": "npx babel-node \"${file}\" --no-babelrc --extends \"${packages}/BuildNode/.babelrc\"",
 }
