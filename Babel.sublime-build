@@ -1,6 +1,5 @@
 {
   "selector": "source.js",
   "line_regex": "Line ([0-9]+):",
-  "working_dir": "${packages}/BuildNode",
-  "shell_cmd": "npx babel-node \"${file}\" --no-babelrc --extends \"${packages}/BuildNode/.babelrc\"",
+  "shell_cmd": "node \"${packages}/BuildNode/node_modules/@babel/node/bin/babel-node.js\" --no-babelrc --presets \"${packages}/BuildNode/node_modules/@babel/preset-env\" --plugins \"${packages}/BuildNode/node_modules/@babel/plugin-proposal-object-rest-spread\" -- \"${file}\"",
 }
